@@ -1,0 +1,52 @@
+---
+name: contacts
+url: contacts
+animationIn: fadeIn
+animationOut: fadeOut
+---
+
+	<div class="main grid-content shrink">
+		
+		<h1>ООО "Название"</h1>
+
+		<ul>
+			<li>тел.: (xxx) 000-00-00</li>
+			<li>e-mail: sibpost@mail.ru</li>
+		</ul>
+
+		<ul>
+			<li>630108 г. Новосибирск, ул. Станционная, 30а</li>
+			<li>ИНН: 5404409126, КПП: 540401001 </li>
+			<li>Р/сч: 40702810400010008056 <br>
+			в НФ АКБ "Ланта-Банк" (ЗАО) </li>
+			<li>К/сч:30101810800000000837 </li>
+			<li>БИК: 045004837 </li>
+			<li>ОГРН: 1105404003451 </li>
+			<li>ОКПО: 64383754 </li>
+			<li>Директор Толкачев В.И.</li>
+		</ul>
+
+
+	</div>
+	<div id="map" class="grid-content">
+        
+        <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+    </div>

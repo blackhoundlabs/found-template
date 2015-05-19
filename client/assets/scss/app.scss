@@ -1,0 +1,40 @@
+@import "settings";
+@import "foundation";
+
+
+
+.aside {
+        background-color: white !important;
+      }
+.main {
+        background-color: #ccc;
+      }
+
+.logo {
+	background: #ccc;
+}
+
+.header {
+	height: 90px;
+}
+
+.banner {
+	padding:0;
+}
+
+.footer {
+  padding:0;
+  height:30px;
+}
+
+#map {
+	background-color: lightyellow;
+}
+
+.prod-menu {
+	top-padding: 1rem;
+	img {
+		padding:2rem 1rem 1rem 1rem;
+
+	}
+}

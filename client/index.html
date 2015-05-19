@@ -1,0 +1,68 @@
+  <!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Apps</title>
+    <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/foundation.js"></script>
+    <script src="/assets/js/templates.js"></script>
+    <script src="/assets/js/routes.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="grid-frame">
+      <div class="large-2 grid-block"></div>  
+      <div class="large-8 grid-block vertical">
+        <div class="header grid-block shrink">
+          <div class="logo grid-content">
+            Logo
+          </div>
+          <div class="adress grid-content">
+            тел.: (xxx) 000-00-00
+            г. Город, ул. Улица, 00а
+            Время работы: с 8-00 до 17-00
+            e-mail: email@domen.ru
+          </div>
+        </div>
+        <div class="grid-content shrink" style="padding: 0;">
+          <ul class="dark menu-bar">
+            <li><a ui-sref="home">Главная</a></li>
+            <li><a ui-sref="products">Продукция и прайсы</a></li>
+            <li><a ui-sref="directory">Справочник</a></li>
+            <li><a ui-sref="service">Услуги</a></li>
+            <li><a ui-sref="contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="banner grid-content shrink">
+          <img src="/assets/img/banner-1.jpg" style="width:100%;">
+        </div>
+         <div class="grid-content shrink" style="padding: 0;">
+          <ul class="primary menu-bar">
+            <li><a ui-sref="krug">Круг</a></li>
+            <li><a ui-sref="armatura">Арматура</a></li>
+            <li><a ui-sref="truba">Труба</a></li>
+            <li><a ui-sref="balka">Балка</a></li>
+            <li><a ui-sref="ugolok">Уголок</a></li>
+            <li><a ui-sref="shveller">Швеллер</a></li>
+            <li><a ui-sref="setka">Сетка кладочная</a></li>
+            <li><a ui-sref="list">Лист</a></li>
+          </ul>
+        </div>
+        <div ui-view class="grid-block"></div>
+        <div class="footer grid-block shrink">
+          <div class="grid-content">
+            copyright
+          </div>
+        </div>
+      <div class="large-2 grid-block"></div>
+      
+      </div>
+    </div>
+  </body>
+</html>
